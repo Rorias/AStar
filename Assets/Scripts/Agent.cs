@@ -45,7 +45,6 @@ public class Agent : MonoBehaviour
         }
     }
 
-
     //Move to clicked position
     public void Update()
     {
@@ -75,6 +74,7 @@ public class Agent : MonoBehaviour
         }
 
     }
+
     public Vector3 MouseToWorld()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -90,10 +90,12 @@ public class Agent : MonoBehaviour
     {
         return new Vector2Int(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.z));
     }
+
     private Vector3 Vector2IntToVector3(Vector2Int pos, float YPos = 0)
     {
         return new Vector3(Mathf.RoundToInt(pos.x), YPos, Mathf.RoundToInt(pos.y));
     }
+
     private void OnDrawGizmos()
     {
         if (path != null && path.Count > 0)
@@ -103,7 +105,6 @@ public class Agent : MonoBehaviour
                 Gizmos.color = renderer.material.color;
                 Gizmos.DrawLine(Vector2IntToVector3(path[i], 0.5f), Vector2IntToVector3(path[i + 1], 0.5f));
             }
-
         }
     }
 }

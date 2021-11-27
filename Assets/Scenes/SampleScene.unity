@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveButton: 0
-  moveSpeed: 1
+  moveSpeed: 3
 --- !u!4 &451908293
 Transform:
   m_ObjectHideFlags: 0
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveButton: 1
-  moveSpeed: 1
+  moveSpeed: 3
 --- !u!4 &519720385
 Transform:
   m_ObjectHideFlags: 0
